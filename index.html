@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Month of love</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Click!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">To the One I Cherish</h2>
+			<div id="sweetMessage">
+				<span id="message"></span>
+			</div>
+		</div>
+		
+		<div id="heartTxt" style="opacity: 1;"> <!-- Ensure opacity is set to 1 -->
+			<span id="clickMe">Click!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.png", "pic/pic2.png", "pic/pic3.png", "pic/pic4.png", "pic/pic5.png", "pic/pic6.png", 
+			"pic/pic7.png", "pic/pic8.png", "pic/pic9.png", "pic/pic10.png", "pic/pic11.png", "pic/pic12.png", "pic/pic13.png",
+			"pic/pic14.png", "pic/pic15.png", "pic/pic16.png"];
+			var imageIndex = 0;
+			var txtArray = [
+    "Even without seeing your face, your presence feels like home to my heart.",
+    "You are the melody my heart has been waiting to hear, even from afar.",
+    "I often close my eyes and imagine your smile, it gives me a kind of joy that words can't describe.",
+    "Distance means nothing when the connection is as real as the love I feel for you.",
+    "Every heartbeat is a reminder of how much I want to share every moment of my life with you.",
+    "In a world full of fleeting moments, you are the one I want to hold onto forever.",
+    "Even the stars envy the glow you’ve added to my life, without ever having met.",
+    "I may not know every detail about you yet, but my heart is certain you're the one it’s been waiting for.",
+    "Sometimes love is a quiet feeling, but what I feel for you echoes loudly, across every mile that separates us.",
+    "You're the dream I can’t stop dreaming, even though we’ve never met, I know our souls have already touched.",
+    "Meeting you will feel like catching up with someone I've known for a thousand lifetimes.",
+    "Every word, every thought of you fills my heart with a warmth that I’ve never known before.",
+    "One day, when we're finally together, I’ll remind you every day just how much your absence made me realize what true love is.",
+    "You are the missing piece I didn’t know I was searching for, but now I can’t imagine my life without you.",
+    "I wonder if you can feel it too—this connection, this pull that brings my heart closer to yours every day."
+];
+
+
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
